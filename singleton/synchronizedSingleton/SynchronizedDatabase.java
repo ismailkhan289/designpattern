@@ -9,7 +9,7 @@ public class SynchronizedDatabase{
         record=0;
     }
 
-    public static synchronized SynchronizedDatabase getInstane(String n){
+    public static synchronized SynchronizedDatabase getInstance(String n){
         if(singleObject==null){
             singleObject = new SynchronizedDatabase(n);
         }
